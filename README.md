@@ -1,7 +1,7 @@
 # Image-dataset-scraper
 Images scraping code from ["depositphotos.com"](https://depositphotos.com/) for your CV tasks.
 
-Depositphotos.com is an international photobank with millions of pictures
+"Depositphotos.com" is an international photobank with millions of pictures.
 
 If you need create a unique CV dataset with specific images/targets it will be useful to search whole dataset from one resourse. 
 Depositphotos.com provides adaptive searching and filters to specify your request.
