@@ -14,20 +14,16 @@ def get_img_urls(url, page_numbers):
 
         soup = bs(requests.get(url).content, "html.parser")
 
-        # найти блок со сменой страницы find changing page blok
+        # find changing page blok
         mydivs = soup.find("div", {"class": "pager pager_light"})
-        # забрать ссылку на след. страницу get next page link
+        # get next page link
         for i in range(len(mydivs)):
             try:
-#                 page_number = mydivs.find_all("a")[i].attrs.get("data-page")
                 next_page_link = mydivs.find_all("a")[i].attrs.get("href")
-#                 if page_number and next_page_link:
-#                     print(f"Move to page number: {page_number} \tlink: {next_page_link}")
             except:
                 pass
             
         url = urljoin(url, next_page_link)
-#         print(f"Next page url: {url}")
         
         for img in soup.find_all("img"):
             # extract images links (lays in "src" and "data-src" tags)
@@ -46,16 +42,14 @@ def download(urls):
     """
     Download images from extracted urls_list to `pathname` dir
     """
-    # if path_to_dir not exist create it
+    # if `pathname` doesn't exist create it
     if not os.path.isdir(pathname):
         os.makedirs(pathname)
         print(f"Created folder to saving dataset: {pathname}")
     for n, url in enumerate(tqdm(urls, "Downloading pictures")):
-        # загружаем тело ответа по частям, а не сразу
         response = requests.get(url, stream=True)
         filename = os.path.join(pathname, f"{n}.jpg")
         with open(filename, "wb") as f:
-            # записываем прочитанные данные, в файл
             f.write(response.content)
             
             
