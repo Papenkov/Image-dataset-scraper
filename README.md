@@ -1,2 +1,40 @@
 # Image-dataset-scraper
-Images scraping code from "depositphotos.com" for your CV tasks
+Images scraping code from ["depositphotos.com"](https://depositphotos.com/) for your CV tasks.
+
+Depositphotos.com is an international photobank with millions of pictures
+
+If you need create a unique CV dataset with specific images/targets it will be useful to search whole dataset from one resourse. 
+Depositphotos.com provides adaptive searching and filters to specify your request.
+
+# How it use
+
+- Go to ["depositphotos.com"](https://depositphotos.com/)
+- Print your request in search form:
+ 
+![1](https://user-images.githubusercontent.com/64463542/168761941-0f88640e-f39c-4b80-85a2-b0e17d88aba1.jpg)
+
+- Add searching filters
+- And copy the link
+
+![main](https://user-images.githubusercontent.com/64463542/168816403-83a3ae19-43c3-45c8-8eb1-ea2e0e537abf.jpg)
+
+
+# Example
+
+Download [dataset_scraper.py](link...)
+
+Open in terminal from folder where you downloaded the dataset_scraper.py
+
+Run command: 
+
+python dataset_scraper.py -p "link" -n "number_of_pages_for_scraping" -f "folder_to_save_files"
+
+```python
+python dataset_parser.py -p 'https://depositphotos.com/stock-photos/sunglasses-man.html?sh=b7a729fc0832fe1d266e59e5d3701bc47222c6cf&filter=all' -n 10 -f ./dataset/sunglasses_man/
+```
+
+**Note:**
+
+one "pages_for_scraping" contains about ~100 images, so if you need for example 1000 images specify -n to "10";
+
+don't forget check the data before training CV model.
