@@ -58,7 +58,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-p', type=str, help='path to initial link')
     parser.add_argument('-n', type=int, default=20, help='number of pages for parsing')  # about ~100 pictures on 1 page (default_pages=20; 20*100 = 2000 samples)
-    parser.add_argument('-f', type=str, help='path to folder to save dataset')
+    parser.add_argument('-f', type=str, help='folder to save dataset')
     args = parser.parse_args()
 
     url = args.p
