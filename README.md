@@ -21,7 +21,7 @@ Depositphotos.com provides adaptive searching and filters to specify your reques
 
 # Example
 
-Download [dataset_scraper.py](link...)
+Copy [dataset_scraper.py](./dataset_parser.py)
 
 Open in terminal from folder where you downloaded the dataset_scraper.py
 
