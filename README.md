@@ -6,7 +6,7 @@ Images scraping code from ["depositphotos.com"](https://depositphotos.com/) for 
 If you need create a unique CV dataset with specific images/targets it will be useful to search whole dataset from one resourse. 
 Depositphotos.com provides adaptive searching and filters to specify your request.
 
-# How it use
+# Usage
 
 - Go to ["depositphotos.com"](https://depositphotos.com/)
 - Print your request in search form:
