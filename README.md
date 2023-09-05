@@ -12,6 +12,9 @@ Depositphotos.com provides adaptive searching and filters to specify your reques
 - Print your request in search form:
  
 ![1](https://user-images.githubusercontent.com/64463542/168761941-0f88640e-f39c-4b80-85a2-b0e17d88aba1.jpg)
+![image](https://github.com/Papenkov/Image-dataset-scraper/assets/64463542/ec70ff2a-fa79-48f8-8149-39cc73978c60)
+
+
 
 - Add searching filters
 - And copy the link
