@@ -9,10 +9,9 @@ Depositphotos.com provides adaptive searching and filters to specify your reques
 # Usage
 
 - Go to ["depositphotos.com"](https://depositphotos.com/)
-- Print your request in search form:
+- Type your request in search form:
  
 ![image](https://github.com/Papenkov/Image-dataset-scraper/assets/64463542/ec70ff2a-fa79-48f8-8149-39cc73978c60)
-
 
 
 - Add searching filters
@@ -34,6 +33,16 @@ python dataset_scraper.py -p "link" -n "number_of_pages_for_scraping" -f "folder
 ```python
 python dataset_parser.py -p 'https://depositphotos.com/stock-photos/sunglasses-man.html?sh=b7a729fc0832fe1d266e59e5d3701bc47222c6cf&filter=all' -n 10 -f ./dataset/sunglasses_man/
 ```
+
+## Arguments
+
+| **Key** | **Value**      | **Description**                | **Default** |
+|---------|----------------|--------------------------------|-------------|
+| `p`     | str            | path to initial link           | `None`      |
+| `n`     | int            | number of pages for parsing    | `20`        |
+| `f`     | str            | path to save images            | `None`      |
+
+If saving folder `-f` doens't exist - create it.
 
 **Note:**
 
